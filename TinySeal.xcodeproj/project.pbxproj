@@ -266,6 +266,13 @@
 		B7ED5BC417069F5A00DF36DE /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7ED5BC317069F5A00DF36DE /* AppDelegate.cpp */; };
 		B7ED5BC717069F5A00DF36DE /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7ED5BC617069F5A00DF36DE /* HelloWorldScene.cpp */; };
 		B7ED5BC917069F5A00DF36DE /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = B7ED5BC817069F5A00DF36DE /* blocks.png */; };
+		B7ED5BD517069FC500DF36DE /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7ED5BCF17069FC500DF36DE /* GLES-Render.cpp */; };
+		B7ED5BD617069FC500DF36DE /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7ED5BD117069FC500DF36DE /* Hero.cpp */; };
+		B7ED5BD717069FC500DF36DE /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7ED5BD317069FC500DF36DE /* Terrain.cpp */; };
+		B7ED5BDE17069FD600DF36DE /* Noise.png in Resources */ = {isa = PBXBuildFile; fileRef = B7ED5BD817069FD600DF36DE /* Noise.png */; };
+		B7ED5BDF17069FD600DF36DE /* TinySeal.caf in Resources */ = {isa = PBXBuildFile; fileRef = B7ED5BDA17069FD600DF36DE /* TinySeal.caf */; };
+		B7ED5BE017069FD600DF36DE /* TinySeal.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7ED5BDC17069FD600DF36DE /* TinySeal.plist */; };
+		B7ED5BE117069FD600DF36DE /* TinySeal.png in Resources */ = {isa = PBXBuildFile; fileRef = B7ED5BDD17069FD600DF36DE /* TinySeal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -828,6 +835,16 @@
 		B7ED5BC517069F5A00DF36DE /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		B7ED5BC617069F5A00DF36DE /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		B7ED5BC817069F5A00DF36DE /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		B7ED5BCF17069FC500DF36DE /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "GLES-Render.cpp"; path = "Classes/GLES-Render.cpp"; sourceTree = "<group>"; };
+		B7ED5BD017069FC500DF36DE /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Classes/GLES-Render.h"; sourceTree = "<group>"; };
+		B7ED5BD117069FC500DF36DE /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hero.cpp; path = Classes/Hero.cpp; sourceTree = "<group>"; };
+		B7ED5BD217069FC500DF36DE /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = Classes/Hero.h; sourceTree = "<group>"; };
+		B7ED5BD317069FC500DF36DE /* Terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Terrain.cpp; path = Classes/Terrain.cpp; sourceTree = "<group>"; };
+		B7ED5BD417069FC500DF36DE /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Terrain.h; path = Classes/Terrain.h; sourceTree = "<group>"; };
+		B7ED5BD817069FD600DF36DE /* Noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Noise.png; path = Resources/Noise.png; sourceTree = "<group>"; };
+		B7ED5BDA17069FD600DF36DE /* TinySeal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TinySeal.caf; sourceTree = "<group>"; };
+		B7ED5BDC17069FD600DF36DE /* TinySeal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TinySeal.plist; sourceTree = "<group>"; };
+		B7ED5BDD17069FD600DF36DE /* TinySeal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TinySeal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -898,6 +915,9 @@
 		B7ED586417069F5500DF36DE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7ED5BD817069FD600DF36DE /* Noise.png */,
+				B7ED5BD917069FD600DF36DE /* Sounds */,
+				B7ED5BDB17069FD600DF36DE /* Sprite Sheets */,
 				B7ED586517069F5500DF36DE /* CloseNormal.png */,
 				B7ED586717069F5500DF36DE /* CloseSelected.png */,
 				B7ED586917069F5500DF36DE /* Default.png */,
@@ -1984,12 +2004,37 @@
 		B7ED5BC117069F5A00DF36DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B7ED5BCF17069FC500DF36DE /* GLES-Render.cpp */,
+				B7ED5BD017069FC500DF36DE /* GLES-Render.h */,
+				B7ED5BD117069FC500DF36DE /* Hero.cpp */,
+				B7ED5BD217069FC500DF36DE /* Hero.h */,
+				B7ED5BD317069FC500DF36DE /* Terrain.cpp */,
+				B7ED5BD417069FC500DF36DE /* Terrain.h */,
 				B7ED5BC217069F5A00DF36DE /* AppDelegate.h */,
 				B7ED5BC317069F5A00DF36DE /* AppDelegate.cpp */,
 				B7ED5BC517069F5A00DF36DE /* HelloWorldScene.h */,
 				B7ED5BC617069F5A00DF36DE /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		B7ED5BD917069FD600DF36DE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B7ED5BDA17069FD600DF36DE /* TinySeal.caf */,
+			);
+			name = Sounds;
+			path = Resources/Sounds;
+			sourceTree = "<group>";
+		};
+		B7ED5BDB17069FD600DF36DE /* Sprite Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				B7ED5BDC17069FD600DF36DE /* TinySeal.plist */,
+				B7ED5BDD17069FD600DF36DE /* TinySeal.png */,
+			);
+			name = "Sprite Sheets";
+			path = "Resources/Sprite Sheets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2058,6 +2103,10 @@
 				B7ED5B2C17069F5900DF36DE /* cocos2dx-ext.mkf in Resources */,
 				B7ED5B2E17069F5900DF36DE /* cocos2dx-ext_public.defines.txt in Resources */,
 				B7ED5BC917069F5A00DF36DE /* blocks.png in Resources */,
+				B7ED5BDE17069FD600DF36DE /* Noise.png in Resources */,
+				B7ED5BDF17069FD600DF36DE /* TinySeal.caf in Resources */,
+				B7ED5BE017069FD600DF36DE /* TinySeal.plist in Resources */,
+				B7ED5BE117069FD600DF36DE /* TinySeal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2301,6 +2350,9 @@
 				B7ED5BBD17069F5A00DF36DE /* b2Rope.cpp in Sources */,
 				B7ED5BC417069F5A00DF36DE /* AppDelegate.cpp in Sources */,
 				B7ED5BC717069F5A00DF36DE /* HelloWorldScene.cpp in Sources */,
+				B7ED5BD517069FC500DF36DE /* GLES-Render.cpp in Sources */,
+				B7ED5BD617069FC500DF36DE /* Hero.cpp in Sources */,
+				B7ED5BD717069FC500DF36DE /* Terrain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

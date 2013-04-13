@@ -1,15 +1,7 @@
-//
-//  TinySealAppDelegate.h
-//  TinySeal
-//
-//  Created by LiXinyu on 13-3-30.
-//  Copyright __MyCompanyName__ 2013年. All rights reserved.
-//
+#ifndef __APP_DELEGATE_H__
+#define __APP_DELEGATE_H__
 
-#ifndef  _APP_DELEGATE_H_
-#define  _APP_DELEGATE_H_
-
-#include "CCApplication.h"
+#include "cocos2d.h"
 
 /**
 @brief    The cocos2d Application.
@@ -21,7 +13,6 @@ class  AppDelegate : private cocos2d::CCApplication
 public:
     AppDelegate();
     virtual ~AppDelegate();
-
 
     /**
     @brief    Implement CCDirector and CCScene init code here.
@@ -43,5 +34,5 @@ public:
     virtual void applicationWillEnterForeground();
 };
 
-#endif // _APP_DELEGATE_H_
+#endif  // __APP_DELEGATE_H__
 
